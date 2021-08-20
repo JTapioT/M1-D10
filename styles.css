@@ -1,0 +1,56 @@
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.olVisibility {
+  visibility: hidden;
+}
+
+.tableTitle {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border-right: 2px solid green;
+  border-left: 2px solid green;
+  padding: 1rem;
+}
+
+tr {
+  border-color: red !important;
+  border-style: dotted;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  text-align: center;
+}
+
+.tableContainer {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.container {
+  border: 1px solid black;
+}
+
+

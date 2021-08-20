@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <!--
+
+        HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
+
+
+        DOM 
+
+        31) Get element with ID "container" from the page
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change a single TD background color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over it
+        49) Write a function to add a table with 4 rows and 3 columns programmatically
+        50) Write a function to remove the table from the page
+    -->
+
+
+    <head>
+        <title>Benchmark Day</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Title for the page</h1>
+        <ol>
+            <li>Ordered list item 1.</li>
+            <li>Ordered list item 2.</li>
+            <li>Ordered list item 3.</li>
+        </ol>
+
+        <table class="tableContainer">
+            <caption class="tableTitle">Table title</caption>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+                <th>Column 5</th>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <!-- MAYBE HAVE MISUNDERSTOOD THE EXERCISE:-->
+                <!-- Merge two cells?-->
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>
+                <a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td><a href="https://strive.school" target="_blank">School</a><img src="https://coursereport-s3-production.global.ssl.fastly.net/rich/rich_files/rich_files/6256/s300/strive-20school-20logo.png" alt="strive school logo"></td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </table>
+    <hr>
+
+    <div class="container">
+        <p>Nested paragraph</p>
+        <ul>
+            <li>Unordered list item 1.</li>
+            <li>Unordered list item 2.</li>
+            <li>Unordered list item 3.</li>
+        </ul>
+    </div>
+    <footer>
+        <h3>John Doe</h2>
+        <p>Student of Strive School</p>
+    </footer>
+    <script src="index.js"></script>
+    </body>
+</html>
